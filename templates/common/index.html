@@ -8,7 +8,7 @@
 
 {% block main_block %}
     <!-- Carousel -->
-    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div id="myCarousel" class="carousel slide">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
                     aria-label="Slide 1"></button>
@@ -17,7 +17,7 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="/media/freski-ecodecor.by2.jpg" alt="" style="object-fit: cover; ">
+                <img src="/media/freski-ecodecor.by2.jpg" alt="" class="carousel-img">
 
                 <div class="container">
                     <div class="carousel-caption text-start">
@@ -53,56 +53,54 @@
     </div>
 
     <!-- Sells -->
-    <section class="marketing container-fluid" id="services">
-        <div class="text-center" style="margin-top: 3rem">
-            <h2 class="section-heading text-uppercase">Services</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+    <div class="container-fluid marketing page-section">
+        <div class="text-center">
+            <h2 class="section-heading bad-script-font">Наши каталоги</h2>
         </div>
-        <div class="row text-center" style="margin-top: 4rem">
-            <div class="col">
+        <!-- Three columns of text below the carousel -->
+        <div class="row d-flex justify-content-evenly">
+            <div class="col-lg-3">
                 <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
                      xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
-                     preserveAspectRatio="xMidYMid slice" focusable="false"><title>Фрески</title>
+                     preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
                     <rect width="100%" height="100%" fill="#777"/>
                     <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
                 </svg>
-                <h4 class="my-4 bad-script-font f-3-rem">Фрески</h4>
-                <div class="container-fluid" style="padding-left: 7rem; padding-right: 7rem; min-height: 11rem">
-                    <p class="text-muted align-self-center" style="font-size: 1.4rem">Фотообои станут идеальным решением для тех, кто не может определиться с дизайном комнаты.</p>
-                </div>
-                <button type="button" class="btn btn-gray btn-to-catalog">ПОСМОТРЕТЬ В КАТАЛОГЕ</button>
-            </div>
-            <div class="col">
-                <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
-                     xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
-                     preserveAspectRatio="xMidYMid slice" focusable="false"><title>Фрески</title>
-                    <rect width="100%" height="100%" fill="#777"/>
-                    <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-                </svg>
-                <h4 class="my-4 bad-script-font f-3-rem">Лепнина</h4>
-                <div class="container-fluid" style="padding-left: 7rem; padding-right: 7rem; min-height: 11rem; max-height: 16rem">
-                    <p class="text-muted" style="font-size: 1.4rem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam
-                        architecto quo inventore harum ex magni, dicta impedit.</p>
-                </div>
-                <button type="button" class="btn btn-gray btn-to-catalog">ПОСМОТРЕТЬ В КАТАЛОГЕ</button>
-            </div>
-            <div class="col">
-                <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
-                     xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
-                     preserveAspectRatio="xMidYMid slice" focusable="false"><title>Фрески</title>
-                    <rect width="100%" height="100%" fill="#777"/>
-                    <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-                </svg>
-                <h4 class="my-4 bad-script-font f-3-rem">Клей</h4>
-                <div class="container-fluid" style="padding-left: 7rem; padding-right: 7rem; height: 11rem">
-                    <p class="text-muted" style="font-size: 1.4rem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam
-                        architecto quo inventore harum ex magni, dicta impedit.</p>
-                </div>
-                <button type="button" class="btn btn-gray btn-to-catalog">ПОСМОТРЕТЬ В КАТАЛОГЕ</button>
-            </div>
-        </div>
 
-    </section>
+                <h4 class="my-4 bad-script-font f-3-rem">Фрески</h4>
+                <p class="text-muted text-sells">Some representative placeholder content for the three columns of text below the
+                    carousel. This is the
+                    first column.</p>
+                <p><a class="btn btn-gray" href="#">ПОСМОТРЕТЬ В КАТАЛОГЕ</a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-3">
+                <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                     xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                     preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#777"/>
+                    <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+                </svg>
+
+                <h4 class="my-4 bad-script-font f-3-rem">Лепнина</h4>
+                <p class="text-muted text-sells">Another exciting bit of representative placeholder content. This time, we've moved
+                    on to the second
+                    column.</p>
+                <p><a class="btn btn-gray" href="#">ПОСМОТРЕТЬ В КАТАЛОГЕ</a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-3">
+                <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                     xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                     preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#777"/>
+                    <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+                </svg>
+
+                <h4 class="my-4 bad-script-font f-3-rem">Клей</h4>
+                <p class="text-muted text-sells">And lastly this, the third column of representative placeholder content.</p>
+                <p><a class="btn btn-gray" href="#">ПОСМОТРЕТЬ В КАТАЛОГЕ</a></p>
+            </div>
+        </div>
+    </div>
 
     <!-- Freski 1 row -->
     <div class="container-fluid">
@@ -110,7 +108,8 @@
             <div class="col-lg-6 showcase-img" style="background-image: url('/media/freski-ecodecor.by2.jpg')"></div>
             <div class="col-lg-6 my-auto showcase-text" style="padding-left: 12rem; padding-right: 12rem;">
                 <h2 style="font-size: 2rem">Fully Responsive Design</h2>
-                <p class="lead mb-0" style="margin-top: 2rem; font-size: 1.5rem;">When you use a theme created by Start Bootstrap, you know that the theme will look
+                <p class="lead mb-0" style="margin-top: 2rem; font-size: 1.5rem;">When you use a theme created by Start
+                    Bootstrap, you know that the theme will look
                     great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
             </div>
         </div>
@@ -127,7 +126,8 @@
                 <div class="card-body">
                     <p class="card-text text-center fs-6 mt-3" style="text-decoration: underline #a78d6e">Пример #1</p>
                     <div class="d-flex" style="min-height: 10rem">
-                        <p class="card-text align-self-center text-center fs-4">ФРЕСКА В СПАЛЬНОЙ КОМНАТЕ В ЖК МИНСК-МИР</p>
+                        <p class="card-text align-self-center text-center fs-4">ФРЕСКА В СПАЛЬНОЙ КОМНАТЕ В ЖК
+                            МИНСК-МИР</p>
                     </div>
                 </div>
                 <div>
@@ -158,7 +158,8 @@
                 <div class="card-body">
                     <p class="card-text text-center fs-6 mt-3" style="text-decoration: underline #a78d6e">Пример #3</p>
                     <div class="d-flex" style="min-height: 10rem">
-                        <p class="card-text align-self-center text-center fs-4">ФРЕСКА В СПАЛЬНОЙ КОМНАТЕ В ЖК МИНСК-МИР</p>
+                        <p class="card-text align-self-center text-center fs-4">ФРЕСКА В СПАЛЬНОЙ КОМНАТЕ В ЖК
+                            МИНСК-МИР</p>
                     </div>
                 </div>
                 <div>
@@ -192,7 +193,8 @@
         <div class="row" style="background: #f6f5f1">
             <div class="col-lg-6 my-auto showcase-text" style="padding-left: 12rem; padding-right: 12rem;">
                 <h2 style="font-size: 2rem">Fully Responsive Design</h2>
-                <p class="lead mb-0" style="margin-top: 2rem; font-size: 1.5rem;">When you use a theme created by Start Bootstrap, you know that the theme will look
+                <p class="lead mb-0" style="margin-top: 2rem; font-size: 1.5rem;">When you use a theme created by Start
+                    Bootstrap, you know that the theme will look
                     great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
             </div>
             <div class="col-lg-6 showcase-img" style="background-image: url('/media/freski-ecodecor.by2.jpg')"></div>
