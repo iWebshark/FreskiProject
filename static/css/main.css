@@ -188,3 +188,24 @@
     }
 }
 
+.social-link {
+    text-decoration: none;
+    color: white;
+    margin-right: 0.7rem;
+}
+
+.social-link:hover {
+    /*color: #a88d6f;*/
+    color: black;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-link:hover {
+    /*color: #a88d6f;*/
+    color: black;
+}
+
