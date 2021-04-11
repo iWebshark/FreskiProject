@@ -1,10 +1,83 @@
 /*navbar styles*/
 .navbar_first_bg {
     background-color: #9aa5a7;
+    height: 2.5rem;
 }
 
 .navbar_first_link {
     color: #fdfaf4 !important;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.navbar_first_link:hover {
+    color: black !important;
+}
+
+.navbar-brand img {
+    margin-right: 0;
+    height: 3rem;
+    position: absolute;
+}
+
+#mainNav {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+}
+
+#mainNav {
+    padding-left: 10rem;
+    transition: padding-left 0.3s ease-in-out;
+}
+
+#mainNav .navbar-brand img {
+    position: absolute;
+    height: 8rem;
+    background: transparent;
+    left: .75rem;
+    top: -2.5rem;
+    transition: height 0.3s ease-in-out;
+}
+
+#mainNav.navbar-shrink {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+}
+
+#mainNav.navbar-shrink {
+    padding-left: 6rem;
+    transition: padding-left 0.3s ease-in-out;
+}
+
+#mainNav.navbar-shrink .navbar-brand img {
+    position: absolute;
+    height: 3rem;
+    top: 0.3rem;
+}
+
+
+a.main-nav-link {
+    display: inline-block;
+    position: relative;
+    color: black !important;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+a.main-nav-link::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: black;
+    display: block;
+    transition: width 0.2s;
+}
+
+a.main-nav-link:hover::after {
+    width: 100%;
 }
 
 .bg-gray {
@@ -69,6 +142,24 @@
 .btn {
     border-radius: 0;
     padding: .5rem 1rem;
+}
+
+.search-btn {
+    border: 0;
+    background: transparent;
+}
+
+.search-input {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid black;
+    outline: 0;
+    font-size: 1.3rem;
+    color: black;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
 }
 
 .btn-to-catalog {
@@ -164,6 +255,10 @@
     font-family: 'Bad Script', cursive;
 }
 
+.montserrat-font {
+    font-family: 'Montserrat', sans-serif;
+}
+
 .f-3-rem {
     font-size: 3rem;
 }
@@ -199,9 +294,42 @@
     color: black;
 }
 
+.search-logo {
+    margin-right: 5rem;
+}
+
+.search-logo img {
+    margin-left: auto;
+    margin-right: auto;
+    height: 25px;
+}
+
 .footer-link {
     text-decoration: none;
     color: white;
+}
+
+a.footer-link {
+    display: inline-block;
+    position: relative;
+    color: white !important;
+}
+
+a.footer-link::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: white;
+    display: block;
+    transition: width 0.2s;
+}
+
+a.footer-link:hover::after {
+    width: 100%;
+}
+
+p.contacts {
+    cursor: default;
 }
 
 .footer-link:hover {
@@ -209,3 +337,24 @@
     color: black;
 }
 
+@media (max-width: 1075px) {
+    .navbar_first_bg.navbar-expand-lg {
+        display: none;
+    }
+
+    .navbar-brand {
+        height: 30px !important;
+    }
+}
+
+.nav-p {
+    padding-left: 11rem;
+}
+
+.nav-contact {
+    margin: 0 5rem 0 0;
+}
+
+.nav-contact:hover {
+    color: black !important;
+}
