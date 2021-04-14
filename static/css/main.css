@@ -28,6 +28,7 @@
 
 #mainNav {
     padding-left: 10rem;
+    padding-right: 5rem;
     transition: padding-left 0.3s ease-in-out;
 }
 
@@ -54,10 +55,21 @@
 
 #mainNav.navbar-shrink .navbar-brand img {
     position: absolute;
-    height: 3rem;
-    top: 0.3rem;
+    height: 3rem !important;
+    top: 0.3rem !important;
 }
 
+@media (max-width: 1075px) {
+    .navbar_first_bg.navbar-expand-lg {
+        display: none;
+    }
+
+    .navbar-brand img{
+        top: 0 !important;
+        position: absolute;
+        height: 5rem !important;
+    }
+}
 
 a.main-nav-link {
     display: inline-block;
@@ -121,6 +133,17 @@ a.main-nav-link:hover::after {
 .btn-brown {
     background-color: #a78d6e;
     color: white;
+}
+
+.btn-brown:hover {
+    background-color: #98a6a7;
+    color: white;
+}
+
+.btn-brown:focus, .btn-brown.focus {
+    outline: 0;
+    background-color: #98a6a7;
+    box-shadow: 0 0 0 0.2rem rgba(152, 166, 167, 0.2);
 }
 
 .btn-gray {
@@ -281,6 +304,19 @@ a.main-nav-link:hover::after {
         padding-right: 11rem;
         height: 5rem;
     }
+
+    #mainNav {
+        padding-right: 0;
+        padding-left: 6rem;
+    }
+
+    .nav-links {
+        padding-top: 1rem;
+    }
+}
+
+.carousel-item img {
+    filter: brightness(40%);
 }
 
 .social-link {
@@ -295,7 +331,7 @@ a.main-nav-link:hover::after {
 }
 
 .search-logo {
-    margin-right: 5rem;
+
 }
 
 .search-logo img {
@@ -335,16 +371,6 @@ p.contacts {
 .footer-link:hover {
     /*color: #a88d6f;*/
     color: black;
-}
-
-@media (max-width: 1075px) {
-    .navbar_first_bg.navbar-expand-lg {
-        display: none;
-    }
-
-    .navbar-brand {
-        height: 30px !important;
-    }
 }
 
 .nav-p {

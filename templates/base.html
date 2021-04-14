@@ -19,9 +19,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <script defer src="{% static 'js/all.js' %}"></script>
 </head>
-<body class="d-flex flex-column h-100">
+<body class="d-flex flex-column h-100 montserrat-font">
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar_first_bg montserrat-font">
+<nav class="navbar navbar-expand-lg navbar_first_bg">
     <div class="container-fluid collapse navbar-collapse nav-p">
         <ul class="navbar-nav">
             <li class="nav-item">
@@ -47,7 +47,7 @@
         </p>
     </div>
 </nav>
-<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top montserrat-font" id="mainNav">
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="mainNav">
     <div class="container-fluid">
         <a class="navbar-brand m-0" href="#">
             <img src="/media/logo.png" alt="" class="d-inline-block align-text-top">
@@ -56,8 +56,8 @@
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-           <ul class="navbar-nav">
+        <div class="collapse navbar-collapse nav-links" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto">
                 <li class="nav-item">
                     <a class="nav-link main-nav-link" aria-current="page" href="#">Фрески</a>
                 </li>
@@ -68,12 +68,12 @@
                     <a class="nav-link main-nav-link" href="#">Клей</a>
                 </li>
             </ul>
-            <form class="d-flex search-logo">
-                <input class="search-input me-2" type="search" placeholder="Поиск" aria-label="Search">
-                <button class="search-btn" type="submit">
-                    <img src="/media/loupe.png" alt="" class="align-self-center">
-                </button>
-            </form>
+{#            <form class="d-flex search-logo">#}
+{#                <input class="search-input me-2" type="search" placeholder="Поиск" aria-label="Search">#}
+{#                <button class="search-btn" type="submit">#}
+{#                    <img src="/media/loupe.png" alt="" class="align-self-center">#}
+{#                </button>#}
+{#            </form>#}
         </div>
     </div>
 </nav>
@@ -94,7 +94,7 @@
                 <!-- Grid column -->
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                     <!-- Links -->
-                    <h6 class="text-uppercase fw-bold text-white">Ссылки</h6>
+                    <h6 class="text-uppercase text-white fw-bold" style="cursor: default">Ссылки</h6>
                     <hr
                             class="mb-4 mt-0 d-inline-block mx-auto"
                             style="width: 60px; background-color: #fcfbf9; height: 2px;opacity: 100;"
@@ -119,7 +119,7 @@
                 <!-- Catalog -->
                 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                     <!-- Links -->
-                    <h6 class="text-uppercase fw-bold text-white">Каталог</h6>
+                    <h6 class="text-uppercase text-white fw-bold" style="cursor: default">Каталог</h6>
                     <hr
                             class="mb-4 mt-0 d-inline-block mx-auto"
                             style="width: 60px; background-color: #fcfbf9; height: 2px;opacity: 100;"
@@ -138,12 +138,12 @@
                 <!-- Contacts -->
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                     <!-- Links -->
-                    <h6 class="text-uppercase fw-bold text-white">Контакты</h6>
+                    <h6 class="text-uppercase text-white fw-bold" style="cursor: default">Контакты</h6>
                     <hr
                             class="mb-4 mt-0 d-inline-block mx-auto"
                             style="width: 60px; background-color: #fcfbf9; height: 2px;opacity: 100;"
                     />
-                    <p class="text-white fw-bold contacts" style="margin-bottom: 0;">
+                    <p class="text-white contacts fw-bold" style="margin-bottom: 0;">
                         <i class="fas fa-map-marker-alt mr-3"></i>
                         г. Минск, ТЦ Град, пав. 293
                     </p>
@@ -152,11 +152,11 @@
                         18:00
                         <br>
                         Понедельник - выходной</p>
-                    <p class="text-white fw-bold contacts">
+                    <p class="text-white contacts fw-bold">
                         <i class="fas fa-envelope mr-3"></i>
                         info@example.com
                     </p>
-                    <p class="text-white fw-bold contacts">
+                    <p class="text-white contacts fw-bold">
                         <i class="fas fa-phone-alt mr-3"></i>
                         +375 (29) 628-55-08
                     </p>
