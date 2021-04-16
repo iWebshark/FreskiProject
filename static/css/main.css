@@ -64,7 +64,7 @@
         display: none;
     }
 
-    .navbar-brand img{
+    .navbar-brand img {
         top: 0 !important;
         position: absolute;
         height: 5rem !important;
@@ -109,15 +109,6 @@ a.main-nav-link:hover::after {
 .bg-black {
     background-color: #222222;
     color: white;
-}
-
-.card {
-    border-radius: 0;
-    border: 0;
-    min-height: 30rem;
-    min-width: 20rem;
-    padding-left: 0;
-    padding-right: 0;
 }
 
 .card-img-bottom {
@@ -243,11 +234,6 @@ a.main-nav-link:hover::after {
     min-width: 100%;
     height: 50rem;
     object-fit: cover;
-}
-
-.card:hover {
-    box-shadow: 0 0 2rem 0 rgba(34, 60, 80, 0.2);
-    cursor: pointer;
 }
 
 /* MARKETING CONTENT
@@ -383,4 +369,28 @@ p.contacts {
 
 .nav-contact:hover {
     color: black !important;
+}
+
+.footer-bg {
+    background: #9aa5a7;
+}
+
+.cursor-default {
+    cursor: default;
+}
+
+.work-example {
+    border-radius: 0;
+    border: 0;
+    min-height: 30rem;
+    min-width: 20rem;
+    padding-left: 0;
+    padding-right: 0;
+    box-shadow: 0 0 2rem 0 rgba(34, 60, 80, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.work-example:hover {
+    transform: scale(1.1);
 }
