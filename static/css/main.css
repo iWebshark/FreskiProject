@@ -131,7 +131,8 @@ a.main-nav-link:hover::after {
     width: auto;
     max-height: 100%;
     align-self: center;
-
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
 
 .goods-img-top {
@@ -160,10 +161,8 @@ a.main-nav-link:hover::after {
 
 .product-name {
     height: 3rem;
-    text-decoration: underline #a78d6e;
-!important;
-    color: black;
-!important;
+    text-decoration: underline #a78d6e !important;
+    color: black !important;
 }
 
 /*bootstrap customization*/
@@ -368,7 +367,7 @@ a.main-nav-link:hover::after {
     }
 }
 
-.carousel-item img {
+.carousel-img {
     filter: brightness(40%);
 }
 
@@ -548,4 +547,90 @@ p.contacts {
 
 .glue:hover .characteristic {
     display: block;
+}
+
+.examples-header {
+    min-height: 55rem;
+    padding: 2rem 13rem 2rem 13rem;
+}
+
+.examples-header-underline {
+    border-bottom: 3px #a78d6e solid;
+}
+
+.examples-cards {
+    padding-top: 1rem;
+}
+
+.example-card {
+    border-radius: 0;
+    background-color: #f7f6f2;
+    border: 0;
+    box-shadow: 0 0 2rem 0 rgba(34, 60, 80, 0.2);
+    height: 24rem;
+    width: 28rem;
+    padding-left: 0;
+    padding-right: 0;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.example-card-desc {
+    padding: 1rem;
+}
+
+.example-card-text {
+    font-size: 1.1rem;
+    align-self: center
+}
+
+.example-modal-dialog {
+    max-width: 70rem;
+}
+
+.modal-body {
+    padding: 0;
+}
+
+.modal-content {
+    background-color: #f7f6f2;
+    border: 0;
+    border-radius: 0;
+}
+
+.example-carousel-inner {
+    max-height: 40rem;
+}
+
+.carousel-item > img {
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(168, 141, 111, 0.9);
+}
+
+.overlay-text {
+    color: white;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.example-card-img:hover .overlay {
+    opacity: 1;
 }

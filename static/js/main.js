@@ -1,3 +1,4 @@
+// Scroll down styling
 $(document).ready(function () {
     $(window).scroll(function () {
         var position = $(this).scrollTop();
@@ -9,7 +10,19 @@ $(document).ready(function () {
     });
 });
 
-
+// Open URL in new tab
 function openUrl(url) {
     window.open(url);
 }
+
+// Open modal with gallery on click
+$('.example-card-modal').on('click', function(ev) {
+    let id = $(this).attr('id')
+
+
+    $('#exampleModal').modal('show');
+});
+
+$('#exampleModal').on('hidden.bs.modal', function () {
+   // $('#modalBody').empty();
+});
