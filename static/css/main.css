@@ -4,6 +4,11 @@
     height: 2.5rem;
 }
 
+a {
+    text-decoration: none;
+!important;
+}
+
 .navbar_first_link {
     color: #fdfaf4 !important;
     margin-left: 1rem;
@@ -24,20 +29,21 @@
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
 }
 
 #mainNav {
     padding-left: 10rem;
-    padding-right: 5rem;
+    padding-right: 1rem;
     transition: padding-left 0.3s ease-in-out;
 }
 
 #mainNav .navbar-brand img {
     position: absolute;
-    height: 8rem;
+    height: 6rem;
     background: transparent;
-    left: .75rem;
-    top: -2.5rem;
+    left: 2.75rem;
+    top: -0.5rem;
     transition: height 0.3s ease-in-out;
 }
 
@@ -45,7 +51,6 @@
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     margin-bottom: 2rem;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
 }
 
 #mainNav.navbar-shrink {
@@ -120,6 +125,47 @@ a.main-nav-link:hover::after {
     object-fit: cover;
 }
 
+.card-img-top {
+    display: inline-block;
+    max-width: 100%;
+    width: auto;
+    max-height: 100%;
+    align-self: center;
+
+}
+
+.goods-img-top {
+    height: 20rem;
+    padding: 1.5rem;
+}
+
+.goods-desc {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0;
+}
+
+.goods-action-label {
+    margin: 0;
+    font-weight: bold;
+    align-self: center;
+    color: white;
+    text-decoration: none !important;
+}
+
+.goods-action {
+    margin-top: 1.5rem;
+    height: 3rem;
+}
+
+.product-name {
+    height: 3rem;
+    text-decoration: underline #a78d6e;
+!important;
+    color: black;
+!important;
+}
+
 /*bootstrap customization*/
 .btn-brown {
     background-color: #a78d6e;
@@ -151,6 +197,23 @@ a.main-nav-link:hover::after {
     outline: 0;
     background-color: #a88d6f;
     box-shadow: 0 0 0 0.2rem rgba(168, 141, 111, 0.2);
+}
+
+.btn-beige {
+    background-color: #f6f5f1;
+    color: black;
+}
+
+.btn-beige:hover {
+    background-color: #98a6a7;
+    color: white
+}
+
+.btn-beige:focus, .btn-beige.focus {
+    color: white;
+    outline: 0;
+    background-color: #98a6a7;
+    box-shadow: 0 0 0 0.2rem rgba(152, 166, 167, 0.2);
 }
 
 .btn {
@@ -284,6 +347,10 @@ a.main-nav-link:hover::after {
     }
 }
 
+.nav-links {
+    justify-content: space-between;
+}
+
 @media screen and (max-width: 990px) {
     .text-sells {
         padding-left: 11rem;
@@ -364,11 +431,7 @@ p.contacts {
 }
 
 .nav-contact {
-    margin: 0 5rem 0 0;
-}
-
-.nav-contact:hover {
-    color: black !important;
+    margin: 0;
 }
 
 .footer-bg {
@@ -387,10 +450,102 @@ p.contacts {
     padding-left: 0;
     padding-right: 0;
     box-shadow: 0 0 2rem 0 rgba(34, 60, 80, 0.2);
+    width: 20rem;
     cursor: pointer;
     transition: transform 0.3s;
 }
 
 .work-example:hover {
     transform: scale(1.1);
+}
+
+.catalog-product {
+    border-radius: 0;
+    border: 2px #a78d6e solid;
+    min-height: 30rem;
+    min-width: 20rem;
+    padding-left: 0;
+    padding-right: 0;
+    width: 20rem;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.catalog-product:hover {
+    box-shadow: 0 0 2rem 0 rgba(34, 60, 80, 0.2);
+    transform: scale(1.05);
+}
+
+.catalog {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.catalog-categories {
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.path {
+    font-size: 0.8rem;
+    cursor: default;
+}
+
+.path-nav {
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: #6c757d;
+}
+
+.path-nav:hover {
+    color: black;
+!important;
+}
+
+.current-cat {
+    text-decoration: underline;
+    cursor: default;
+}
+
+.category {
+    margin-top: 1.5rem;
+    width: 15rem;
+    font-size: 1.3rem;
+}
+
+.product-desc {
+    padding: 0 2rem 2rem 1.5rem;
+}
+
+.product-card-desc {
+    color: black;
+    text-decoration: underline #a78d6e
+}
+
+.connection-line {
+    border-bottom: 1px solid #6c757d;
+    opacity: 50%;
+    width: 100%;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    height: 0.6rem;
+}
+
+.char {
+    margin: 0;
+    white-space: nowrap;
+}
+
+.char-line {
+    margin-bottom: 0.5rem;
+}
+
+.glue .characteristic {
+    display: none;
+    color: #6c757d;
+    font-size: 0.85rem;
+}
+
+.glue:hover .characteristic {
+    display: block;
 }

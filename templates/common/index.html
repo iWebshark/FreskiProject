@@ -23,7 +23,7 @@
                     <div class="carousel-caption text-start">
                         <h1>Фрески</h1>
                         <p>Заказывайте фрески (надо придумать тексты)</p>
-                        <p><a class="btn btn-brown" href="#">Каталог фресок</a></p>
+                        <p><a class="btn btn-brown" href="{% url 'catalog_app:fresco' %}">Каталог фресок</a></p>
                     </div>
                 </div>
             </div>
@@ -34,7 +34,7 @@
                     <div class="carousel-caption">
                         <h1>Лепнина</h1>
                         <p>Заказывайте лепнину (придумать текст)</p>
-                        <p><a class="btn btn-brown" href="#">Каталог лепнины</a></p>
+                        <p><a class="btn btn-brown" href="{% url 'catalog_app:fretwork' %}">Каталог лепнины</a></p>
                     </div>
                 </div>
             </div>
@@ -45,7 +45,7 @@
                     <div class="carousel-caption text-end">
                         <h1>Клей</h1>
                         <p>Не нюхайте клей</p>
-                        <p><a class="btn btn-brown" href="#">Каталог клея</a></p>
+                        <p><a class="btn btn-brown" href="{% url 'catalog_app:glue' %}">Каталог клея</a></p>
                     </div>
                 </div>
             </div>
@@ -71,7 +71,7 @@
                 <p class="text-muted text-sells">Some representative placeholder content for the three columns of text below the
                     carousel. This is the
                     first column.</p>
-                <p><a class="btn btn-gray" href="#">ПОСМОТРЕТЬ В КАТАЛОГЕ</a></p>
+                <p><a class="btn btn-gray" href="{% url 'catalog_app:fresco' %}">ПОСМОТРЕТЬ В КАТАЛОГЕ</a></p>
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-3">
                 <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
@@ -85,7 +85,7 @@
                 <p class="text-muted text-sells">Another exciting bit of representative placeholder content. This time, we've moved
                     on to the second
                     column.</p>
-                <p><a class="btn btn-gray" href="#">ПОСМОТРЕТЬ В КАТАЛОГЕ</a></p>
+                <p><a class="btn btn-gray" href="{% url 'catalog_app:fretwork' %}">ПОСМОТРЕТЬ В КАТАЛОГЕ</a></p>
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-3">
                 <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
@@ -97,7 +97,7 @@
 
                 <h4 class="my-4 bad-script-font f-3-rem">Клей</h4>
                 <p class="text-muted text-sells">And lastly this, the third column of representative placeholder content.</p>
-                <p><a class="btn btn-gray" href="#">ПОСМОТРЕТЬ В КАТАЛОГЕ</a></p>
+                <p><a class="btn btn-gray" href="{% url 'catalog_app:glue' %}">ПОСМОТРЕТЬ В КАТАЛОГЕ</a></p>
             </div>
         </div>
     </div>
@@ -122,7 +122,7 @@
         </div>
         <div class="row d-flex justify-content-center" style="margin-top: 4rem">
             <!-- Card 1 -->
-            <div class="card bg-gray align-self-center mx-4 mb-3 work-example" style="width: 18rem; max-height: 25rem;">
+            <div class="card bg-gray align-self-center mx-4 mb-3 work-example">
                 <div class="card-body">
                     <p class="card-text text-center fs-6 mt-3" style="text-decoration: underline #a78d6e">Пример #1</p>
                     <div class="d-flex" style="min-height: 10rem">
@@ -138,7 +138,7 @@
                 </div>
             </div>
             <!-- Card 2 -->
-            <div class="card bg-brown align-self-center mx-4 mb-3 work-example" style="width: 18rem; max-height: 25rem;">
+            <div class="card bg-brown align-self-center mx-4 mb-3 work-example">
                 <div class="card-body">
                     <p class="card-text text-center fs-6 mt-3" style="text-decoration: underline white">Пример #2</p>
                     <div class="d-flex" style="min-height: 10rem">
@@ -154,7 +154,7 @@
                 </div>
             </div>
             <!-- Card 3 -->
-            <div class="card bg-gray align-self-center mx-4 mb-3 work-example" style="width: 18rem; max-height: 25rem;">
+            <div class="card bg-gray align-self-center mx-4 mb-3 work-example">
                 <div class="card-body">
                     <p class="card-text text-center fs-6 mt-3" style="text-decoration: underline #a78d6e">Пример #3</p>
                     <div class="d-flex" style="min-height: 10rem">
@@ -170,7 +170,7 @@
                 </div>
             </div>
             <!-- Card 4 -->
-            <div class="card bg-gray-dark align-self-center mx-4 mb-3 work-example" style="width: 18rem; max-height: 25rem;">
+            <div class="card bg-gray-dark align-self-center mx-4 mb-3 work-example">
                 <div class="card-body">
                     <p class="card-text text-center fs-6 mt-3" style="text-decoration: underline white">Пример #4</p>
                     <div class="d-flex" style="min-height: 10rem">

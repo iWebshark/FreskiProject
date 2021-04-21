@@ -7,7 +7,32 @@
 
 {% block main_block %}
 
-    <div class="container-fluid" style="height: 40rem"></div>
+    <div class="container-fluid d-flex flex-row catalog" style="min-height: 50rem">
+        <div class="col-lg-3 catalog-categories">
+            <h2 class="current-cat">
+                {% block current_cat_name %}
+
+                {% endblock %}
+            </h2>
+            <a class="btn btn-beige category" href="{% url 'catalog_app:fresco' %}">Фрески</a>
+            <a class="btn btn-brown category" href="{% url 'catalog_app:fretwork' %}">Лепнина</a>
+            <a class="btn btn-gray category" href="{% url 'catalog_app:glue' %}">Клей</a>
+        </div>
+        <div class="col-lg-9">
+            <div>
+                {# Product description #}
+                {% block product_desc %}
+
+                {% endblock %}
+            </div>
+            <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 g-3">
+                {# Products/catalogs cards #}
+                {% block product_cards %}
+
+                {% endblock %}
+            </div>
+        </div>
+    </div>
 
 
 {% endblock %}

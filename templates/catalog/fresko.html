@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+{% extends 'catalog/catalog.html' %}
+
+
+{% block current_cat_name %}
+    Фрески
+{% endblock %}
+
+
+{% block product_desc %}
+    <div class="product-desc">
+        <p>Мы работаем с поставщиваки напрямуцю, поэтому смотрите каталоги у них</p>
+    </div>
+{% endblock %}
+
+
+{% block product_cards %}
+    <div class="col">
+        <div class="card mx-4 mb-3 catalog-product" id="freska1"
+             onclick="openUrl('https://lastanza.ru/katalog-fresok-i-fotooboev/katalog-fresok/');">
+            <div class="d-flex justify-content-center goods-img-top">
+                <img src="/media/catalog/fresko/lastanza.png" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body goods-desc">
+                <p class="card-text text-center fs-6 product-name" style="text-decoration: underline #a78d6e">
+                    Каталог фресок La Stanza
+                </p>
+                <div class="bg-gray-dark goods-action d-flex justify-content-center">
+                    <p class="goods-action-label">Перейти</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card mx-4 mb-3 catalog-product" id="freska1"
+             onclick="openUrl('https://affresco.ru/catalog/frescoes-and-murals/');">
+            <div class="d-flex justify-content-center goods-img-top">
+                <img src="/media/catalog/fresko/affresco.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body goods-desc">
+                <p class="card-text text-center fs-6 product-name" style="text-decoration: underline #a78d6e">
+                    Каталог фресок Affresco
+                </p>
+                <div class="bg-gray-dark goods-action d-flex justify-content-center">
+                    <p class="goods-action-label">Перейти</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card mx-4 mb-3 catalog-product" id="freska1"
+             onclick="openUrl('https://www.applico.ru/shop/kollekcija-one');">
+            <div class="d-flex justify-content-center goods-img-top">
+                <img src="/media/catalog/fresko/applico.png" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body goods-desc">
+                <p class="card-text text-center fs-6 product-name" style="text-decoration: underline #a78d6e">
+                    Каталог фресок Applico
+                </p>
+                <div class="bg-gray-dark goods-action d-flex justify-content-center">
+                    <p class="goods-action-label">Перейти</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card mx-4 mb-3 catalog-product" id="freska1"
+             onclick="openUrl('https://www.fotooboi.ru/wallpapers/');">
+            <div class="d-flex justify-content-center goods-img-top">
+                <img src="/media/catalog/fresko/wall_street.png" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body goods-desc">
+                <p class="card-text text-center fs-6 product-name" style="text-decoration: underline #a78d6e">
+                    Каталог фресок Wall Street
+                </p>
+                <div class="bg-gray-dark goods-action d-flex justify-content-center">
+                    <p class="goods-action-label">Перейти</p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
