@@ -16,7 +16,7 @@ function openUrl(url) {
 }
 
 // Open modal with gallery on click
-$('.example-card-modal').on('click', function(ev) {
+$('.example-card-img').on('click', function(ev) {
     let id = $(this).attr('id')
 
 

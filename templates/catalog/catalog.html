@@ -7,31 +7,36 @@
 
 {% block main_block %}
 
-    <div class="container-fluid d-flex flex-row catalog" style="min-height: 50rem">
-        <div class="col-lg-3 catalog-categories">
-            <h2 class="current-cat">
-                {% block current_cat_name %}
+    <div class="container-fluid page-header">
+        <div class="w-100 page-header-underline d-flex">
+            <h4>Каталог</h4>
+            <h4>&nbsp;>&nbsp;</h4>
+            {% block current_cat_name %}
 
-                {% endblock %}
-            </h2>
-            <a class="btn btn-beige category" href="{% url 'catalog_app:fresco' %}">Фрески</a>
-            <a class="btn btn-brown category" href="{% url 'catalog_app:fretwork' %}">Лепнина</a>
-            <a class="btn btn-gray category" href="{% url 'catalog_app:glue' %}">Клей</a>
+            {% endblock %}
         </div>
-        <div class="col-lg-9">
-            <div>
-                {# Product description #}
-                {% block product_desc %}
-
-                {% endblock %}
+        <div class="w-100 container-fluid d-flex flex-row catalog">
+            <div class="catalog-categories" style="width: 15rem">
+                <a class="btn btn-beige category" href="{% url 'catalog_app:fresco' %}">Фрески</a>
+                <a class="btn btn-brown category" href="{% url 'catalog_app:fretwork' %}">Лепнина</a>
+                <a class="btn btn-gray category" href="{% url 'catalog_app:glue' %}">Клей</a>
             </div>
-            <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 g-3">
-                {# Products/catalogs cards #}
-                {% block product_cards %}
+            <div class="container-fluid" style="padding-right: 0; padding-left: 2rem">
+                <div>
+                    {# Product description #}
+                    {% block product_desc %}
 
-                {% endblock %}
+                    {% endblock %}
+                </div>
+                <div class="row row-cols-1 row-cols-sm-1 row-cols-xl-2 row-cols-xxl-3  row-cols-xxxl-4 g-3">
+                    {# Products/catalogs cards #}
+                    {% block product_cards %}
+
+                    {% endblock %}
+                </div>
             </div>
         </div>
+
     </div>
 
 

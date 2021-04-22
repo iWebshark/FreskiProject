@@ -5,13 +5,30 @@
 
 
 {% block main_block %}
-    <div class="container-fluid examples-header">
-        <div class="w-100 examples-header-underline">
+    <div class="container-fluid page-header">
+        <div class="w-100 page-header-underline">
             <h4>Примеры работ</h4>
         </div>
-        <div class="w-100 examples-cards">
-            <div class="row">
-                <div class="col-4 d-flex justify-content-start">
+        <div class="w-100 examples-cards container-fluid">
+            <div class="row row-cols-1 row-cols-xxl-2 row-cols-xxxl-3 g-3">
+                <div class="col">
+
+                    <div class="card mb-3 example-card example-card-modal" id="example1">
+                        <div class="d-flex justify-content-center example-card-img">
+                            <img src="/media/freski-ecodecor.jpg" class="card-img-top" alt="...">
+                            <div class="overlay">
+                                <p class="overlay-text">Смотреть проект</p>
+                            </div>
+                        </div>
+                        <div class="card-body example-card-desc d-flex">
+                            <p class="card-text example-card-text">
+                                Фреска в спальной комнате ЖК Минск-Мир и не только
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col">
 
                     <div class="card mb-3 example-card example-card-modal" id="example1">
                         <div class="d-flex justify-content-center example-card-img">
@@ -28,28 +45,11 @@
                     </div>
 
                 </div>
-                <div class="col-4 d-flex justify-content-center">
+                <div class="col">
 
                     <div class="card mb-3 example-card example-card-modal" id="example1">
                         <div class="d-flex justify-content-center example-card-img">
-                            <img src="/media/freski-ecodecor.by2.jpg" class="card-img-top" alt="...">
-                            <div class="overlay">
-                                <p class="overlay-text">Смотреть проект</p>
-                            </div>
-                        </div>
-                        <div class="card-body example-card-desc d-flex">
-                            <p class="card-text example-card-text">
-                                Фреска в спальной комнате ЖК Минск-Мир и не только
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-4 d-flex justify-content-end">
-
-                    <div class="card mb-3 example-card example-card-modal" id="example1">
-                        <div class="d-flex justify-content-center example-card-img">
-                            <img src="/media/freski-ecodecor.by2.jpg" class="card-img-top" alt="...">
+                            <img src="/media/fresku.jpg" class="card-img-top" alt="...">
                             <div class="overlay">
                                 <p class="overlay-text">Смотреть проект</p>
                             </div>
