@@ -459,6 +459,43 @@ p.contacts {
     transform: scale(1.1);
 }
 
+.work-example-1, .work-example-3 {
+    background-color: #f7f6f2;
+}
+
+.work-example-1 .example-num, .work-example-3 .example-num {
+    text-decoration: underline #a78d6e
+}
+
+.work-example-1 .producer, .work-example-3 .producer {
+    color: white;
+    background-color: #9aa5ab;
+}
+
+.work-example-2 {
+    color: white;
+    background-color: #a88d6f;
+}
+
+.work-example-2 .example-num, .work-example-4 .example-num {
+    text-decoration: underline white
+}
+
+.work-example-2 .producer {
+    background-color: #222222;
+    color: white;
+}
+
+.work-example-4 {
+    color: white;
+    background-color: #9aa5ab;
+}
+
+.work-example-4 .producer {
+    color: white;
+    background-color: #a88d6f;
+}
+
 .catalog-product {
     border-radius: 0;
     border: 2px #a78d6e solid;

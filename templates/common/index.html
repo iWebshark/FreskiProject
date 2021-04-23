@@ -28,7 +28,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="/media/freski-ecodecor.by2.jpg" alt="">
+                <img src="/media/freski-ecodecor.by2.jpg" alt="" class="carousel-img">
 
                 <div class="container">
                     <div class="carousel-caption">
@@ -39,10 +39,10 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="/media/freski-ecodecor.by2.jpg" alt="">
+                <img src="/media/freski-ecodecor.by2.jpg" alt="" class="carousel-img">
 
                 <div class="container">
-                    <div class="carousel-caption text-end">
+                    <div class="carousel-caption text-end" >
                         <h1>Клей</h1>
                         <p>Не нюхайте клей</p>
                         <p><a class="btn btn-brown" href="{% url 'catalog_app:glue' %}">Каталог клея</a></p>
@@ -68,7 +68,8 @@
                 </svg>
 
                 <h4 class="my-4 bad-script-font f-3-rem">Фрески</h4>
-                <p class="text-muted text-sells">Some representative placeholder content for the three columns of text below the
+                <p class="text-muted text-sells">Some representative placeholder content for the three columns of text
+                    below the
                     carousel. This is the
                     first column.</p>
                 <p><a class="btn btn-gray" href="{% url 'catalog_app:fresco' %}">ПОСМОТРЕТЬ В КАТАЛОГЕ</a></p>
@@ -82,7 +83,8 @@
                 </svg>
 
                 <h4 class="my-4 bad-script-font f-3-rem">Лепнина</h4>
-                <p class="text-muted text-sells">Another exciting bit of representative placeholder content. This time, we've moved
+                <p class="text-muted text-sells">Another exciting bit of representative placeholder content. This time,
+                    we've moved
                     on to the second
                     column.</p>
                 <p><a class="btn btn-gray" href="{% url 'catalog_app:fretwork' %}">ПОСМОТРЕТЬ В КАТАЛОГЕ</a></p>
@@ -96,7 +98,8 @@
                 </svg>
 
                 <h4 class="my-4 bad-script-font f-3-rem">Клей</h4>
-                <p class="text-muted text-sells">And lastly this, the third column of representative placeholder content.</p>
+                <p class="text-muted text-sells">And lastly this, the third column of representative placeholder
+                    content.</p>
                 <p><a class="btn btn-gray" href="{% url 'catalog_app:glue' %}">ПОСМОТРЕТЬ В КАТАЛОГЕ</a></p>
             </div>
         </div>
@@ -121,70 +124,25 @@
             <h1 class="align-self-center bad-script-font f-3-rem">Примеры работ</h1>
         </div>
         <div class="row d-flex justify-content-center" style="margin-top: 4rem">
-            <!-- Card 1 -->
-            <div class="card bg-gray align-self-center mx-4 mb-3 work-example">
-                <div class="card-body">
-                    <p class="card-text text-center fs-6 mt-3" style="text-decoration: underline #a78d6e">Пример #1</p>
-                    <div class="d-flex" style="min-height: 10rem">
-                        <p class="card-text align-self-center text-center fs-4">ФРЕСКА В СПАЛЬНОЙ КОМНАТЕ В ЖК
-                            МИНСК-МИР</p>
+            {% for example in examples %}
+                <div class="card align-self-center mx-4 mb-3 work-example work-example-{{ forloop.counter }}"
+                onclick="openUrlSameTab('/examples')">
+                    <div class="card-body">
+                        <p class="card-text text-center fs-6 mt-3 example-num">Пример #{{ forloop.counter }}</p>
+                        <div class="d-flex" style="min-height: 10rem">
+                            <p class="card-text align-self-center text-uppercase text-center fs-4">{{ example.name }}</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="/media/{{ example.default_image }}" class="card-img-bottom" alt="...">
+                    </div>
+                    <div class="w-100 d-flex justify-content-center producer" style="min-height: 2rem; padding-top: 0.2rem;">
+                        {% if examples.0.producer is not None %}
+                            <a class="text-white" href="#" style="text-decoration: none">{{ example.producer }}</a>
+                        {% endif %}
                     </div>
                 </div>
-                <div>
-                    <img src="/media/freski-ecodecor.by2.jpg" class="card-img-bottom" alt="...">
-                </div>
-                <div class="w-100 bg-gray-dark d-flex justify-content-center" style="min-height: 2rem; padding-top: 0.2rem;">
-                    <a class="text-white" href="#" style="text-decoration: none">orecle.com</a>
-                </div>
-            </div>
-            <!-- Card 2 -->
-            <div class="card bg-brown align-self-center mx-4 mb-3 work-example">
-                <div class="card-body">
-                    <p class="card-text text-center fs-6 mt-3" style="text-decoration: underline white">Пример #2</p>
-                    <div class="d-flex" style="min-height: 10rem">
-                        <p class="card-text align-self-center text-center fs-4">ФРЕСКА В СПАЛЬНОЙ КОМНАТЕ В ЖК
-                            МИНСК-МИР</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="/media/fresku.jpg" class="card-img-bottom" alt="...">
-                </div>
-                <div class="w-100 bg-black d-flex justify-content-center" style="min-height: 2rem; padding-top: 0.2rem;">
-                    <a class="text-white" href="#" style="text-decoration: none">orecle.com</a>
-                </div>
-            </div>
-            <!-- Card 3 -->
-            <div class="card bg-gray align-self-center mx-4 mb-3 work-example">
-                <div class="card-body">
-                    <p class="card-text text-center fs-6 mt-3" style="text-decoration: underline #a78d6e">Пример #3</p>
-                    <div class="d-flex" style="min-height: 10rem">
-                        <p class="card-text align-self-center text-center fs-4">ФРЕСКА В СПАЛЬНОЙ КОМНАТЕ В ЖК
-                            МИНСК-МИР</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="/media/thumb_l_dec_2011.jpg" class="card-img-bottom" alt="...">
-                </div>
-                <div class="w-100 bg-gray-dark d-flex justify-content-center" style="min-height: 2rem; padding-top: 0.2rem;">
-                    <a class="text-white" href="#" style="text-decoration: none">orecle.com</a>
-                </div>
-            </div>
-            <!-- Card 4 -->
-            <div class="card bg-gray-dark align-self-center mx-4 mb-3 work-example">
-                <div class="card-body">
-                    <p class="card-text text-center fs-6 mt-3" style="text-decoration: underline white">Пример #4</p>
-                    <div class="d-flex" style="min-height: 10rem">
-                        <p class="card-text align-self-center text-center fs-4">ФРЕСКА В СПАЛЬНОЙ КОМНАТЕ В ЖК
-                            МИНСК-МИР</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="/media/freski-ecodecor.jpg" class="card-img-bottom" alt="...">
-                </div>
-                <div class="w-100 bg-brown d-flex justify-content-center" style="min-height: 2rem; padding-top: 0.2rem;">
-                    <a class="text-white" href="#" style="text-decoration: none">orecle.com</a>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
 

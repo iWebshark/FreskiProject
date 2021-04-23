@@ -15,6 +15,10 @@ function openUrl(url) {
     window.open(url);
 }
 
+function openUrlSameTab(url) {
+    window.open(url, '_self')
+}
+
 // Open modal with gallery on click
 $('.example-card-img').on('click', function(ev) {
     let id = $(this).attr('id')
