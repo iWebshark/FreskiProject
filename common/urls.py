@@ -11,4 +11,5 @@ urlpatterns = [
                   path('about', views.about, name='about'),
                   path('contacts', views.contacts, name='contacts'),
                   path('examples', views.examples, name='examples'),
+                  path('examples/get/<int:id_to_get>', views.examples_get, name='examples_get'),
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

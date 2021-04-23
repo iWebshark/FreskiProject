@@ -127,11 +127,9 @@
                         <i class="fas fa-map-marker-alt mr-3"></i>
                         {{ contacts.Адрес }}
                     </p>
-                    <p class="text-white contacts" style="font-size: 0.8rem; margin-left: 1rem">Вторник – Воскресение: с
-                        9:00 до
-                        18:00
+                    <p class="text-white contacts" style="font-size: 0.8rem; margin-left: 1rem">{{ contacts.Расписание.0}} {{ contacts.Расписание.1}}
                         <br>
-                        Понедельник - выходной</p>
+                        {{ contacts.Расписание.2}}й</p>
                     <p class="text-white contacts fw-bold">
                         <i class="fas fa-envelope mr-3"></i>
                         {{ contacts.Email }}

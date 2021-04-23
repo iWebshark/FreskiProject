@@ -1,5 +1,8 @@
 from django.shortcuts import render
-from .models import Example, Contact
+from django.http import HttpResponse
+import json
+from django.core.serializers import serialize
+from .models import Example, ExampleImage, Contact
 
 
 # Create your views here.
@@ -17,4 +20,17 @@ def contacts(request):
 
 
 def examples(request):
-    return render(request, 'common/examples.html')
+    exampls = list(Example.objects.all())
+    return render(request, 'common/examples.html', {'examples': exampls})
+
+
+def examples_get(request, id_to_get: int):
+    example = Example.objects.get(pk=id_to_get)
+    objects_img = list(ExampleImage.objects.filter(example=example))
+
+    img_dict = dict()
+    img_dict[str(example.default_image)] = str(example.default_image)
+    for img in objects_img:
+        img_dict[str(img.image)] = str(img.image)
+
+    return HttpResponse(json.dumps(img_dict), content_type='application/json')

@@ -33,10 +33,11 @@ class Contact(models.Model):
     CONTACT_CHOICES = (
         ('Адрес', 'Адрес'),
         ('Телефон', 'Телефон'),
-        ('Email', 'Email')
+        ('Email', 'Email'),
+        ('Расписание', 'Расписание')
     )
 
-    tag = models.CharField(max_length=10, unique=True, verbose_name='Тип',
+    tag = models.CharField(max_length=15, unique=True, verbose_name='Тип',
                            choices=CONTACT_CHOICES, default='Адрес')
     value = models.CharField(max_length=250, unique=True, verbose_name='Значение')
 
