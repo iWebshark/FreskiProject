@@ -15,6 +15,23 @@
 
 
 {% block product_cards %}
-
+    {% for fretwork in fretwork_list %}
+        <div class="col">
+            <div class="card mb-3 catalog-product"
+                 onclick="openUrl('{{ fretwork.provider_link }}');">
+                <div class="d-flex justify-content-center goods-img-top">
+                    <img src="/media/{{ fretwork.provider_img }}" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body goods-desc">
+                    <p class="card-text text-center fs-6 product-name" style="text-decoration: underline #a78d6e">
+                        {{ fretwork.name }}
+                    </p>
+                    <div class="bg-gray-dark goods-action d-flex justify-content-center">
+                        <p class="goods-action-label">Перейти</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
 {% endblock %}
 

@@ -12,11 +12,15 @@ $(document).ready(function () {
 
 // Open URL in new tab
 function openUrl(url) {
-    window.open(url);
+    if (url !== null) {
+        window.open(url);
+    }
 }
 
 function openUrlSameTab(url) {
-    window.open(url, '_self')
+    if (url !== null) {
+        window.open(url, '_self')
+    }
 }
 
 // Open modal with gallery on click
@@ -36,7 +40,7 @@ $('.example-card-img').on('click', function (ev) {
                         "<img src=\"/media/" + key + "\" class=\"d-block w-100\" alt=\"...\">\n" +
                         "<div>")
                 } else {
-                     imagesContainer.append("<div class=\"carousel-item\">\n" +
+                    imagesContainer.append("<div class=\"carousel-item\">\n" +
                         "<img src=\"/media/" + key + "\" class=\"d-block w-100\" alt=\"...\">\n" +
                         "<div>")
                 }
@@ -45,11 +49,11 @@ $('.example-card-img').on('click', function (ev) {
 
             for (let k = 0; k < i; k++) {
                 if (k === 0) {
-                    modalButtons.append("<button type=\"button\" data-bs-target=\"#carouselExampleIndicators\" data-bs-slide-to=\""+k+"\"\n" +
-                    "class=\"active\" aria-current=\"true\" aria-label=\"Slide "+k+1+"\"></button>");
+                    modalButtons.append("<button type=\"button\" data-bs-target=\"#carouselExampleIndicators\" data-bs-slide-to=\"" + k + "\"\n" +
+                        "class=\"active\" aria-current=\"true\" aria-label=\"Slide " + k + 1 + "\"></button>");
                 } else {
-                     modalButtons.append("<button type=\"button\" data-bs-target=\"#carouselExampleIndicators\" data-bs-slide-to=\""+k+"\"\n" +
-                    "aria-current=\"true\" aria-label=\"Slide "+k+1+"\"></button>");
+                    modalButtons.append("<button type=\"button\" data-bs-target=\"#carouselExampleIndicators\" data-bs-slide-to=\"" + k + "\"\n" +
+                        "aria-current=\"true\" aria-label=\"Slide " + k + 1 + "\"></button>");
                 }
             }
         }
